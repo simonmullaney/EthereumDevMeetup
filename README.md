@@ -1,5 +1,5 @@
 
-#Ethereum Development Meetup Wednesday, March 28, 2018 - Simple IPFS file retrieval using truffle, ganache and oraclize
+Ethereum Development Meetup Wednesday, March 28, 2018 - Simple IPFS file retrieval using truffle, ganache and oraclize
 
 Install dependencies:
 

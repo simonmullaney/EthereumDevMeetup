@@ -2,7 +2,7 @@ var ipfs = artifacts.require("./IPFS.sol")
 
 contract('ipfs', function(accounts) {
 
-  let Simon = '0xd0370b74cf2faba10a6badba5a976a66a3292131';
+  let Simon = web3.eth.accounts[0];
   var instance
 
   it("should send ether to contract adress so we can use the orcalize service",function(){

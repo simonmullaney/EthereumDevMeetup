@@ -5,7 +5,9 @@ var usingOraclize = artifacts.require("./usingOraclize.sol")
 
 module.exports = function(deployer) {
   deployer.deploy(Migrations);
-  deployer.deploy(ipfs);
-  deployer.deploy(usingOraclize);
+  deployer.deploy(usingOraclize).then(function() {
+    return deployer.deploy(ipfs, usingOraclize.address);
+  });
+
 
 };
